@@ -8,6 +8,14 @@ import (
 	"github.com/go-playground/locales/en_IN"
 )
 
+func padding(tabs int) string {
+	s := ""
+	for i := 0; i < tabs; i++ {
+		s += "\t"
+	}
+	return s
+}
+
 func calculateMonthlyInterestRate(yearlyInterestPercent float64) float64 {
 	return math.Pow(1.0+yearlyInterestPercent/100.0, 1.0/12.0)
 }
@@ -96,8 +104,10 @@ func printStrategyReturns(
 	yearlyLoanInterestPercent float64,
 	loanAmount float64,
 	loanDurationYears float64,
+	tabs int,
 ) {
 	l := en_IN.New()
+	pad := padding(tabs)
 
 	amountRemaining := calculate_intialCapitalInvested_liquidatedMonthlyToPayEmi(
 		yearlyInvestmentReturnPercent,
@@ -105,7 +115,7 @@ func printStrategyReturns(
 		loanAmount,
 		loanDurationYears,
 	)
-	fmt.Printf("intialCapitalInvested_liquidatedMonthlyToPayEmi: %v\n", l.FmtCurrency(amountRemaining, 0, currency.INR))
+	fmt.Printf("%sintialCapitalInvested_liquidatedMonthlyToPayEmi: %v\n", pad, l.FmtCurrency(amountRemaining, 0, currency.INR))
 
 	amountRemaining = calculate_intialCapitalInvested_liquidatedYearlyToPayEmi(
 		yearlyInvestmentReturnPercent,
@@ -113,7 +123,7 @@ func printStrategyReturns(
 		loanAmount,
 		loanDurationYears,
 	)
-	fmt.Printf("intialCapitalInvested_liquidatedYearlyToPayEmi: %v\n", l.FmtCurrency(amountRemaining, 0, currency.INR))
+	fmt.Printf("%sintialCapitalInvested_liquidatedYearlyToPayEmi: %v\n", pad, l.FmtCurrency(amountRemaining, 0, currency.INR))
 
 	amountRemaining = calculate_intialCapitalInvested_emiPaidFromPocket(
 		yearlyInvestmentReturnPercent,
@@ -121,7 +131,7 @@ func printStrategyReturns(
 		loanAmount,
 		loanDurationYears,
 	)
-	fmt.Printf("intialCapitalInvested_emiPaidFromPocket: %v\n", l.FmtCurrency(amountRemaining, 0, currency.INR))
+	fmt.Printf("%sintialCapitalInvested_emiPaidFromPocket: %v\n", pad, l.FmtCurrency(amountRemaining, 0, currency.INR))
 
 	amountRemaining = calculate_boughtFromInitalCapital_emiAmountInvestedInSip(
 		yearlyInvestmentReturnPercent,
@@ -129,10 +139,10 @@ func printStrategyReturns(
 		loanAmount,
 		loanDurationYears,
 	)
-	fmt.Printf("boughtFromInitialCapital_emiAmountInvestedInSip: %v\n", l.FmtCurrency(amountRemaining, 0, currency.INR))
+	fmt.Printf("%sboughtFromInitialCapital_emiAmountInvestedInSip: %v\n", pad, l.FmtCurrency(amountRemaining, 0, currency.INR))
 }
 
-func main() {
+func printReturnsForValues() {
 	var (
 		yearlyInvestmentReturnPercent = 11.0
 		yearlyLoanInterestPercent     = 8.0
@@ -144,5 +154,28 @@ func main() {
 		yearlyLoanInterestPercent,
 		loanAmount,
 		loanDurationYears,
+		0,
 	)
+}
+
+func optimizeReturns() {
+	var (
+		yearlyInvestmentReturnPercent = 11.0
+		yearlyLoanInterestPercent     = 8.0
+		loanAmount                    = 20_00_000.0
+	)
+
+	for loanDurationYears := 3.0; loanDurationYears <= 10.0; loanDurationYears++ {
+		fmt.Printf("\nLoan Duration Years: %v\n", loanDurationYears)
+		printStrategyReturns(yearlyInvestmentReturnPercent,
+			yearlyLoanInterestPercent,
+			loanAmount,
+			loanDurationYears,
+			1,
+		)
+	}
+}
+
+func main() {
+	optimizeReturns()
 }
