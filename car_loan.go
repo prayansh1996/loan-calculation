@@ -45,11 +45,12 @@ func calculate_intialCapitalInvested_liquidatedMonthlyToPayEmi(
 	yearlyInvestmentReturnPercent float64,
 	yearlyLoanInterestPercent float64,
 	loanAmount float64,
+	downPayment float64,
 	loanDurationYears float64,
 ) float64 {
-	totalMoneyRemaining := loanAmount
+	totalMoneyRemaining := loanAmount - downPayment
 	monthlyInvestmentReturnRate := calculateMonthlyInterestRate(yearlyInvestmentReturnPercent)
-	monthlyEmi := calculateMonthlyEmi(loanAmount, yearlyLoanInterestPercent, loanDurationYears)
+	monthlyEmi := calculateMonthlyEmi(totalMoneyRemaining, yearlyLoanInterestPercent, loanDurationYears)
 
 	for i := 0.0; i < 12.0*loanDurationYears; i++ {
 		totalMoneyRemaining = monthlyInvestmentReturnRate*totalMoneyRemaining - monthlyEmi
@@ -61,14 +62,15 @@ func calculate_intialCapitalInvested_liquidatedYearlyToPayEmi(
 	yearlyInvestmentReturnPercent float64,
 	yearlyLoanInterestPercent float64,
 	loanAmount float64,
+	downPayment float64,
 	loanDurationYears float64,
 ) float64 {
-	totalMoneyRemaining := loanAmount
-	yearylyInvestmentReturnRate := 1 + yearlyInvestmentReturnPercent/100.0
-	monthlyEmi := calculateMonthlyEmi(loanAmount, yearlyLoanInterestPercent, loanDurationYears)
+	totalMoneyRemaining := loanAmount - downPayment
+	yearlyInvestmentReturnRate := 1 + yearlyInvestmentReturnPercent/100.0
+	monthlyEmi := calculateMonthlyEmi(totalMoneyRemaining, yearlyLoanInterestPercent, loanDurationYears)
 
 	for i := 0.0; i < loanDurationYears; i++ {
-		totalMoneyRemaining = totalMoneyRemaining*yearylyInvestmentReturnRate - monthlyEmi*12.0
+		totalMoneyRemaining = totalMoneyRemaining*yearlyInvestmentReturnRate - monthlyEmi*12.0
 	}
 	return totalMoneyRemaining
 }
@@ -77,14 +79,15 @@ func calculate_intialCapitalInvested_emiPaidFromPocket(
 	yearlyInvestmentReturnPercent float64,
 	yearlyLoanInterestPercent float64,
 	loanAmount float64,
+	downPayment float64,
 	loanDurationYears float64,
 ) float64 {
-	totalMoneyRemaining := loanAmount
-	yearylyInvestmentReturnRate := 1 + yearlyInvestmentReturnPercent/100.0
-	monthlyEmi := calculateMonthlyEmi(loanAmount, yearlyLoanInterestPercent, loanDurationYears)
+	totalMoneyRemaining := loanAmount - downPayment
+	yearlyInvestmentReturnRate := 1 + yearlyInvestmentReturnPercent/100.0
+	monthlyEmi := calculateMonthlyEmi(totalMoneyRemaining, yearlyLoanInterestPercent, loanDurationYears)
 
 	for i := 0.0; i < loanDurationYears; i++ {
-		totalMoneyRemaining = totalMoneyRemaining * yearylyInvestmentReturnRate
+		totalMoneyRemaining = totalMoneyRemaining * yearlyInvestmentReturnRate
 	}
 	return totalMoneyRemaining - 12*loanDurationYears*monthlyEmi
 }
@@ -95,14 +98,16 @@ func calculate_boughtFromInitalCapital_emiAmountInvestedInSip(
 	loanAmount float64,
 	loanDurationYears float64,
 ) float64 {
-	monthlyEmi := calculateMonthlyEmi(loanAmount, yearlyLoanInterestPercent, loanDurationYears)
-	return calculateSipReturns(monthlyEmi, yearlyInvestmentReturnPercent, loanDurationYears) - loanAmount
+	totalMoneyRemaining := loanAmount
+	monthlyEmi := calculateMonthlyEmi(totalMoneyRemaining, yearlyLoanInterestPercent, loanDurationYears)
+	return calculateSipReturns(monthlyEmi, yearlyInvestmentReturnPercent, loanDurationYears) - totalMoneyRemaining
 }
 
 func printStrategyReturns(
 	yearlyInvestmentReturnPercent float64,
 	yearlyLoanInterestPercent float64,
 	loanAmount float64,
+	downPayment float64,
 	loanDurationYears float64,
 	tabs int,
 ) {
@@ -113,6 +118,7 @@ func printStrategyReturns(
 		yearlyInvestmentReturnPercent,
 		yearlyLoanInterestPercent,
 		loanAmount,
+		downPayment,
 		loanDurationYears,
 	)
 	fmt.Printf("%sintialCapitalInvested_liquidatedMonthlyToPayEmi: %v\n", pad, l.FmtCurrency(amountRemaining, 0, currency.INR))
@@ -121,6 +127,7 @@ func printStrategyReturns(
 		yearlyInvestmentReturnPercent,
 		yearlyLoanInterestPercent,
 		loanAmount,
+		downPayment,
 		loanDurationYears,
 	)
 	fmt.Printf("%sintialCapitalInvested_liquidatedYearlyToPayEmi: %v\n", pad, l.FmtCurrency(amountRemaining, 0, currency.INR))
@@ -129,6 +136,7 @@ func printStrategyReturns(
 		yearlyInvestmentReturnPercent,
 		yearlyLoanInterestPercent,
 		loanAmount,
+		downPayment,
 		loanDurationYears,
 	)
 	fmt.Printf("%sintialCapitalInvested_emiPaidFromPocket: %v\n", pad, l.FmtCurrency(amountRemaining, 0, currency.INR))
@@ -147,12 +155,14 @@ func printReturnsForValues() {
 		yearlyInvestmentReturnPercent = 11.0
 		yearlyLoanInterestPercent     = 8.0
 		loanAmount                    = 20_00_000.0
+		downPayment                   = 0.0
 		loanDurationYears             = 7.0
 	)
 	printStrategyReturns(
 		yearlyInvestmentReturnPercent,
 		yearlyLoanInterestPercent,
 		loanAmount,
+		downPayment,
 		loanDurationYears,
 		0,
 	)
@@ -163,6 +173,7 @@ func optimizeReturns() {
 		yearlyInvestmentReturnPercent = 11.0
 		yearlyLoanInterestPercent     = 8.0
 		loanAmount                    = 20_00_000.0
+		downPayment                   = 0.0
 	)
 
 	for loanDurationYears := 3.0; loanDurationYears <= 10.0; loanDurationYears++ {
@@ -170,6 +181,7 @@ func optimizeReturns() {
 		printStrategyReturns(yearlyInvestmentReturnPercent,
 			yearlyLoanInterestPercent,
 			loanAmount,
+			downPayment,
 			loanDurationYears,
 			1,
 		)
@@ -177,5 +189,5 @@ func optimizeReturns() {
 }
 
 func main() {
-	optimizeReturns()
+	printReturnsForValues()
 }
