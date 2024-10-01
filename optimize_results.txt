@@ -1,0 +1,400 @@
+
+Loan Duration Years: 3
+
+	Down Payment: 0
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR97,425.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR2,21,760.00
+		intialCapitalInvested_emiPaidFromPocket: INR4,79,044.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR6,83,145.00
+
+	Down Payment: 100000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR92,553.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR2,10,672.00
+		intialCapitalInvested_emiPaidFromPocket: INR4,55,092.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR6,83,145.00
+
+	Down Payment: 200000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR87,682.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR1,99,584.00
+		intialCapitalInvested_emiPaidFromPocket: INR4,31,139.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR6,83,145.00
+
+	Down Payment: 300000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR82,811.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR1,88,496.00
+		intialCapitalInvested_emiPaidFromPocket: INR4,07,187.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR6,83,145.00
+
+	Down Payment: 400000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR77,940.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR1,77,408.00
+		intialCapitalInvested_emiPaidFromPocket: INR3,83,235.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR6,83,145.00
+
+	Down Payment: 500000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR73,068.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR1,66,320.00
+		intialCapitalInvested_emiPaidFromPocket: INR3,59,283.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR6,83,145.00
+
+	Down Payment: 600000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR68,197.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR1,55,232.00
+		intialCapitalInvested_emiPaidFromPocket: INR3,35,331.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR6,83,145.00
+
+	Down Payment: 700000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR63,326.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR1,44,144.00
+		intialCapitalInvested_emiPaidFromPocket: INR3,11,378.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR6,83,145.00
+
+Loan Duration Years: 4
+
+	Down Payment: 0
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR1,40,159.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR2,76,662.00
+		intialCapitalInvested_emiPaidFromPocket: INR6,92,500.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR9,54,244.00
+
+	Down Payment: 100000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR1,33,151.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR2,62,829.00
+		intialCapitalInvested_emiPaidFromPocket: INR6,57,875.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR9,54,244.00
+
+	Down Payment: 200000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR1,26,143.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR2,48,996.00
+		intialCapitalInvested_emiPaidFromPocket: INR6,23,250.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR9,54,244.00
+
+	Down Payment: 300000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR1,19,135.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR2,35,162.00
+		intialCapitalInvested_emiPaidFromPocket: INR5,88,625.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR9,54,244.00
+
+	Down Payment: 400000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR1,12,127.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR2,21,329.00
+		intialCapitalInvested_emiPaidFromPocket: INR5,54,000.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR9,54,244.00
+
+	Down Payment: 500000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR1,05,119.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR2,07,496.00
+		intialCapitalInvested_emiPaidFromPocket: INR5,19,375.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR9,54,244.00
+
+	Down Payment: 600000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR98,111.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR1,93,663.00
+		intialCapitalInvested_emiPaidFromPocket: INR4,84,750.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR9,54,244.00
+
+	Down Payment: 700000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR91,103.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR1,79,830.00
+		intialCapitalInvested_emiPaidFromPocket: INR4,50,125.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR9,54,244.00
+
+Loan Duration Years: 5
+
+	Down Payment: 0
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR1,89,543.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR3,39,460.00
+		intialCapitalInvested_emiPaidFromPocket: INR9,36,949.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR12,54,239.00
+
+	Down Payment: 100000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR1,80,066.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR3,22,487.00
+		intialCapitalInvested_emiPaidFromPocket: INR8,90,102.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR12,54,239.00
+
+	Down Payment: 200000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR1,70,588.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR3,05,514.00
+		intialCapitalInvested_emiPaidFromPocket: INR8,43,254.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR12,54,239.00
+
+	Down Payment: 300000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR1,61,111.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR2,88,541.00
+		intialCapitalInvested_emiPaidFromPocket: INR7,96,407.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR12,54,239.00
+
+	Down Payment: 400000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR1,51,634.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR2,71,568.00
+		intialCapitalInvested_emiPaidFromPocket: INR7,49,559.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR12,54,239.00
+
+	Down Payment: 500000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR1,42,157.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR2,54,595.00
+		intialCapitalInvested_emiPaidFromPocket: INR7,02,712.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR12,54,239.00
+
+	Down Payment: 600000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR1,32,680.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR2,37,622.00
+		intialCapitalInvested_emiPaidFromPocket: INR6,55,864.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR12,54,239.00
+
+	Down Payment: 700000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR1,23,203.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR2,20,649.00
+		intialCapitalInvested_emiPaidFromPocket: INR6,09,017.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR12,54,239.00
+
+Loan Duration Years: 6
+
+	Down Payment: 0
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR2,46,405.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR4,11,115.00
+		intialCapitalInvested_emiPaidFromPocket: INR12,16,042.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR15,86,343.00
+
+	Down Payment: 100000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR2,34,085.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR3,90,560.00
+		intialCapitalInvested_emiPaidFromPocket: INR11,55,240.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR15,86,343.00
+
+	Down Payment: 200000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR2,21,764.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR3,70,004.00
+		intialCapitalInvested_emiPaidFromPocket: INR10,94,438.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR15,86,343.00
+
+	Down Payment: 300000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR2,09,444.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR3,49,448.00
+		intialCapitalInvested_emiPaidFromPocket: INR10,33,636.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR15,86,343.00
+
+	Down Payment: 400000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR1,97,124.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR3,28,892.00
+		intialCapitalInvested_emiPaidFromPocket: INR9,72,834.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR15,86,343.00
+
+	Down Payment: 500000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR1,84,804.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR3,08,337.00
+		intialCapitalInvested_emiPaidFromPocket: INR9,12,032.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR15,86,343.00
+
+	Down Payment: 600000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR1,72,483.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR2,87,781.00
+		intialCapitalInvested_emiPaidFromPocket: INR8,51,230.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR15,86,343.00
+
+	Down Payment: 700000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR1,60,163.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR2,67,225.00
+		intialCapitalInvested_emiPaidFromPocket: INR7,90,428.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR15,86,343.00
+
+Loan Duration Years: 7
+
+	Down Payment: 0
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR3,11,669.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR4,92,699.00
+		intialCapitalInvested_emiPaidFromPocket: INR15,33,836.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR19,54,134.00
+
+	Down Payment: 100000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR2,96,086.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR4,68,064.00
+		intialCapitalInvested_emiPaidFromPocket: INR14,57,144.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR19,54,134.00
+
+	Down Payment: 200000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR2,80,502.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR4,43,429.00
+		intialCapitalInvested_emiPaidFromPocket: INR13,80,453.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR19,54,134.00
+
+	Down Payment: 300000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR2,64,919.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR4,18,794.00
+		intialCapitalInvested_emiPaidFromPocket: INR13,03,761.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR19,54,134.00
+
+	Down Payment: 400000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR2,49,336.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR3,94,159.00
+		intialCapitalInvested_emiPaidFromPocket: INR12,27,069.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR19,54,134.00
+
+	Down Payment: 500000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR2,33,752.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR3,69,524.00
+		intialCapitalInvested_emiPaidFromPocket: INR11,50,377.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR19,54,134.00
+
+	Down Payment: 600000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR2,18,169.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR3,44,890.00
+		intialCapitalInvested_emiPaidFromPocket: INR10,73,685.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR19,54,134.00
+
+	Down Payment: 700000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR2,02,585.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR3,20,255.00
+		intialCapitalInvested_emiPaidFromPocket: INR9,96,994.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR19,54,134.00
+
+Loan Duration Years: 8
+
+	Down Payment: 0
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR3,86,365.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR5,85,403.00
+		intialCapitalInvested_emiPaidFromPocket: INR18,94,833.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR23,61,599.00
+
+	Down Payment: 100000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR3,67,046.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR5,56,133.00
+		intialCapitalInvested_emiPaidFromPocket: INR18,00,091.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR23,61,599.00
+
+	Down Payment: 200000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR3,47,728.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR5,26,863.00
+		intialCapitalInvested_emiPaidFromPocket: INR17,05,350.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR23,61,599.00
+
+	Down Payment: 300000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR3,28,410.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR4,97,593.00
+		intialCapitalInvested_emiPaidFromPocket: INR16,10,608.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR23,61,599.00
+
+	Down Payment: 400000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR3,09,092.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR4,68,322.00
+		intialCapitalInvested_emiPaidFromPocket: INR15,15,866.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR23,61,599.00
+
+	Down Payment: 500000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR2,89,774.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR4,39,052.00
+		intialCapitalInvested_emiPaidFromPocket: INR14,21,125.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR23,61,599.00
+
+	Down Payment: 600000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR2,70,455.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR4,09,782.00
+		intialCapitalInvested_emiPaidFromPocket: INR13,26,383.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR23,61,599.00
+
+	Down Payment: 700000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR2,51,137.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR3,80,512.00
+		intialCapitalInvested_emiPaidFromPocket: INR12,31,642.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR23,61,599.00
+
+Loan Duration Years: 9
+
+	Down Payment: 0
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR4,71,636.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR6,90,553.00
+		intialCapitalInvested_emiPaidFromPocket: INR23,04,031.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR28,13,184.00
+
+	Down Payment: 100000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR4,48,054.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR6,56,025.00
+		intialCapitalInvested_emiPaidFromPocket: INR21,88,830.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR28,13,184.00
+
+	Down Payment: 200000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR4,24,473.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR6,21,497.00
+		intialCapitalInvested_emiPaidFromPocket: INR20,73,628.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR28,13,184.00
+
+	Down Payment: 300000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR4,00,891.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR5,86,970.00
+		intialCapitalInvested_emiPaidFromPocket: INR19,58,427.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR28,13,184.00
+
+	Down Payment: 400000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR3,77,309.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR5,52,442.00
+		intialCapitalInvested_emiPaidFromPocket: INR18,43,225.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR28,13,184.00
+
+	Down Payment: 500000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR3,53,727.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR5,17,915.00
+		intialCapitalInvested_emiPaidFromPocket: INR17,28,024.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR28,13,184.00
+
+	Down Payment: 600000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR3,30,145.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR4,83,387.00
+		intialCapitalInvested_emiPaidFromPocket: INR16,12,822.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR28,13,184.00
+
+	Down Payment: 700000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR3,06,563.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR4,48,859.00
+		intialCapitalInvested_emiPaidFromPocket: INR14,97,620.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR28,13,184.00
+
+Loan Duration Years: 10
+
+	Down Payment: 0
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR5,68,758.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR8,09,623.00
+		intialCapitalInvested_emiPaidFromPocket: INR27,66,980.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR33,13,840.00
+
+	Down Payment: 100000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR5,40,320.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR7,69,142.00
+		intialCapitalInvested_emiPaidFromPocket: INR26,28,631.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR33,13,840.00
+
+	Down Payment: 200000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR5,11,883.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR7,28,661.00
+		intialCapitalInvested_emiPaidFromPocket: INR24,90,282.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR33,13,840.00
+
+	Down Payment: 300000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR4,83,445.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR6,88,180.00
+		intialCapitalInvested_emiPaidFromPocket: INR23,51,933.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR33,13,840.00
+
+	Down Payment: 400000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR4,55,007.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR6,47,699.00
+		intialCapitalInvested_emiPaidFromPocket: INR22,13,584.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR33,13,840.00
+
+	Down Payment: 500000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR4,26,569.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR6,07,217.00
+		intialCapitalInvested_emiPaidFromPocket: INR20,75,235.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR33,13,840.00
+
+	Down Payment: 600000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR3,98,131.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR5,66,736.00
+		intialCapitalInvested_emiPaidFromPocket: INR19,36,886.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR33,13,840.00
+
+	Down Payment: 700000
+		intialCapitalInvested_liquidatedMonthlyToPayEmi: INR3,69,693.00
+		intialCapitalInvested_liquidatedYearlyToPayEmi: INR5,26,255.00
+		intialCapitalInvested_emiPaidFromPocket: INR17,98,537.00
+		boughtFromInitialCapital_emiAmountInvestedInSip: INR33,13,840.00
