@@ -28,12 +28,6 @@ type Calculation struct {
 	loanDurationYears             float64
 }
 
-type CalculationWithVariables struct {
-	calculation       Calculation
-	downPayment       float64
-	loanDurationYears float64
-}
-
 func (c Calculation) String() string {
 	l := en_IN.New()
 	return fmt.Sprintf(
@@ -44,6 +38,15 @@ func (c Calculation) String() string {
 		l.FmtCurrency(c.capitalSpent-c.capitalRemaining, 0, currency.INR),
 	)
 }
+
+func SortByMinimumNetLoss(calculations []Calculation) {
+	sort.Slice(calculations, func(l, r int) bool {
+		return (calculations[l].capitalRemaining - calculations[l].capitalSpent) >
+			(calculations[r].capitalRemaining - calculations[r].capitalSpent)
+	})
+}
+
+// ------------------------- Calculation functions ---------------------- //
 
 func calculateMonthlyInterestRate(yearlyInterestPercent float64) float64 {
 	return math.Pow(1.0+yearlyInterestPercent/100.0, 1.0/12.0)
@@ -69,6 +72,8 @@ func calculateSipReturns(
 	numerator := monthlySipAmount * (math.Pow(1.0+monthlyInterestRate, 12.0*investmentDurationYears) - 1.0) * (1.0 + monthlyInterestRate)
 	return numerator / monthlyInterestRate
 }
+
+// ----------------------------- Strategies -------------------------------- //
 
 func calculate_intialCapitalInvested_liquidatedMonthlyToPayEmi(
 	yearlyInvestmentReturnPercent float64,
@@ -185,6 +190,8 @@ func calculate_boughtFromInitalCapital_emiAmountInvestedInSip(
 	}
 }
 
+// ------------------------- Strategy Comparisions ---------------------------- //
+
 func calculateStrategyReturns(
 	yearlyInvestmentReturnPercent float64,
 	yearlyLoanInterestPercent float64,
@@ -228,8 +235,6 @@ func calculateStrategyReturns(
 	return calculations
 }
 
-// --------------- STRATEGY TESTS -------------- //
-
 func printReturnsForFixedValues() {
 	var (
 		yearlyInvestmentReturnPercent = 11.0
@@ -271,11 +276,7 @@ func optimizeReturnsForDurationAndDownPayment() {
 			calculations = append(calculations, calculationForVariables...)
 		}
 	}
-
-	sort.Slice(calculations, func(l, r int) bool {
-		return (calculations[l].capitalRemaining - calculations[l].capitalSpent) >
-			(calculations[r].capitalRemaining - calculations[r].capitalSpent)
-	})
+	SortByMinimumNetLoss(calculations)
 
 	l := en_IN.New()
 	for i := 0; i < 10; i++ {
@@ -284,11 +285,38 @@ func optimizeReturnsForDurationAndDownPayment() {
 	}
 }
 
+func printReturnsForLoanInterestRates() {
+	var (
+		yearlyInvestmentReturnPercent = 11.0
+		loanAmount                    = 21_50_000.0
+		loanDurationYears             = 7.0
+		downPayment                   = 3_00_000.0
+	)
+
+	calculations := []Calculation{}
+	for yearlyLoanInterestPercent := 8.4; yearlyLoanInterestPercent <= 9.5; yearlyLoanInterestPercent += 0.1 {
+		calculationForVariables := calculate_intialCapitalInvested_emiPaidFromPocket(
+			yearlyInvestmentReturnPercent,
+			yearlyLoanInterestPercent,
+			loanAmount,
+			downPayment,
+			loanDurationYears,
+		)
+		calculations = append(calculations, calculationForVariables)
+	}
+	SortByMinimumNetLoss(calculations)
+
+	for _, calculation := range calculations {
+		fmt.Printf("\n\t\tLoan Interest Rate: %v\n", calculation.yearlyLoanInterestPercent)
+		fmt.Println(calculation)
+	}
+}
+
 func printReturnsForFixedDurationAndDownPayment() {
 	var (
 		yearlyInvestmentReturnPercent = 12.0
 		yearlyLoanInterestPercent     = 9.0
-		loanAmount                    = 20_00_000.0
+		loanAmount                    = 21_50_000.0
 	)
 
 	for loanDurationYears := 3.0; loanDurationYears <= 10.0; loanDurationYears++ {
@@ -313,5 +341,5 @@ func printReturnsForFixedDurationAndDownPayment() {
 }
 
 func main() {
-	optimizeReturnsForDurationAndDownPayment()
+	printReturnsForLoanInterestRates()
 }
